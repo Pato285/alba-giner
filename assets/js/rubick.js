@@ -382,6 +382,19 @@ rubik = {
                 }, 450); 
             },500);
         });
+        $('.cita').click(function(){
+          $project_content = $(this).closest('.project-content');
+          $project_content.removeClass('open scroll');
+
+          $('body').removeClass("noscroll");
+          //$('a').removeClass('no-opacity');
+            setTimeout(function(){
+                $project_content.removeClass('has-background');
+                setTimeout(function(){
+                    $project_content.removeAttr('style');
+                }, 450);
+            },500);
+        });
     },
     
     initGoogleMaps: function(){

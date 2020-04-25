@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Dalmatins';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Dalmatins'), url('../fonts/Dalmatins/Dalmatins.otf') format('truetype');
+}
+.firma{
+  font-family: 'Dalmatins' !important;
+  text-transform: none !important;
+  font-size: 2em !important;
+}
+
+.about-me img{
+  width: 100%;
+}
+.pack{
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.pack h4{
+  font-size: 28px !important;
+}
+
 /*      light colors         */
 /*           Font Smoothing      */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
