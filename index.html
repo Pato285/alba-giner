@@ -95,11 +95,11 @@
         <div class="separator-container">
             <div class="separator line-separator">✻</div>
         </div>
-                <video style="width: 100%; margin-bottom: 20px;" preload="auto" loop="loop" autoplay="false" controls>
-                    <source src="assets/video/reel.mp4">
-                    <source src="assets/video/reel.mp4" type="video/mp4">
-                    Video not supported
-                </video>
+        <div class="video-container">
+            <iframe width="auto" src="https://www.youtube.com/embed/TNqXYuWGx1Q?controls=0&autoplay=1" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="video"></iframe>
+        </div>
 
     </div>
     <div style="margin-top: 3em" class="section section-clients-2" id="clients2">
@@ -111,32 +111,53 @@
                 </div>
             </div>
             <div class="text-area" style="padding-top: 1em">
-                <div class="title add-animation-stopped">
+                <div class="title add-animation-stopped" style="max-width: 100%">
                     <p>La Asesoría te ayuda y te da todas las herramientas para sacar el máximo partido a tu propia
                         imagen. No sólo mejora rotundamente la apariencia, sino lo más importante, te hace sentir mucho
                         más cómodo contigo mismo, potenciando y mejorando la percepción personal. Seas hombre o mujer,
                         los procesos son los mismos y puedes contar con nuestros conocimientos y experiencia.</p>
 
-                    <i><b><p>La asesoría de imagen es un proceso en el que estableceremos objetivos totalmente
+                    <span id="more-asesoria" style="display: none"><p class="alt-p">La asesoría de imagen es un proceso en el que estableceremos objetivos
+                        totalmente
                         personales,
                         relacionados con la imagen propia, el estilo personal, la percepción de los demás, la primera
-                        impresión o cualquier otra necesidad que quieras resolver o mejorar. </p></b></i>
+                        impresión o cualquier otra necesidad que quieras resolver o mejorar. </p>
 
-                    <p>Objetivos personales o profesionales que iremos trabajando a medida que avancemos en los
-                        diferentes estudios físicos del rostro, el cuerpo y de color, pero que sobretodo tienen en
-                        cuenta tu personalidad, gustos y estilo de vida a la hora de establecer soluciones y resultados
-                        idóneos para ti. </p>
+                        <p>Objetivos personales o profesionales que iremos trabajando a medida que avancemos en los
+                            diferentes estudios físicos del rostro, el cuerpo y de color, pero que sobretodo tienen en
+                            cuenta tu personalidad, gustos y estilo de vida a la hora de establecer soluciones y
+                            resultados
+                            idóneos para ti. </p>
 
-                    <p>Lo más importante es que tú mismo aprendas las reglas simples y básicas que te permitan trabajar
-                        con las formas, las líneas y volúmenes de tu cuerpo, así como los colores que más te favorecen.
-                        Y comprender que todo aquello que expresas a través del vestuario como forma de comunicación, es
-                        además una herramienta que siempre puedes usar a tu favor. Podrás consultar estos resultados
-                        cuando lo necesites mediante tu libro personal, información que te servirá para siempre!</p>
+                        <p class="alt-p">Lo más importante es que tú mismo aprendas las reglas simples y básicas que te
+                            permitan trabajar
+                            con las formas, las líneas y volúmenes de tu cuerpo, así como los colores que más te
+                            favorecen.
+                            Y comprender que todo aquello que expresas a través del vestuario como forma de
+                            comunicación, es
+                            además una herramienta que siempre puedes usar a tu favor. Podrás consultar estos resultados
+                            cuando lo necesites mediante tu libro personal, información que te servirá para siempre!</p>
 
-                    <p>Como asesoría de imagen integral además, establecemos la colaboración con una red de
-                        profesionales de otras áreas para obtener los mejores resultados para cada persona, como
-                        coaching personal o profesional, peluquería, maquillaje, dietética y nutrición, entrenamiento
-                        físico, odontología, etc. </p>
+                        <p>Como asesoría de imagen integral además, establecemos la colaboración con una red de
+                            profesionales de otras áreas para obtener los mejores resultados para cada persona, como
+                            coaching personal o profesional, peluquería, maquillaje, dietética y nutrición,
+                            entrenamiento
+                            físico, odontología, etc. </p></span>
+                    <p style="text-decoration: underline; cursor: pointer"><a onclick="readMoreAsesoria()" id="btn-read-more-asesoria">Leer más...</a></p>
+                    <script>
+                        function readMoreAsesoria() {
+                            var moreText = document.getElementById("more-asesoria");
+                            var btnText = document.getElementById("btn-read-more-asesoria");
+
+                            if (moreText.style.display !== "none") {
+                                btnText.innerHTML = "Leer más...";
+                                moreText.style.display = "none";
+                            } else {
+                                btnText.innerHTML = "Leer menos";
+                                moreText.style.display = "inline";
+                            }
+                        }
+                    </script>
                     <a class="btn btn-lg cita-section" data-scroll="true" data-id="#contact2"> Agenda una cita</a>
                 </div>
             </div>
@@ -171,8 +192,8 @@
         <div class="container">
             <div class="row" id="projectsLine1">
                 <div class="col-md-6 col-md-offset-1">
-                    <div class="project add-animation-stopped animation-1 pack">
-                        <img alt="..." src="assets/img/author-blog-create-creative-267569.jpg"/>
+                    <div class="project add-animation-stopped animation-1 pack pack-horizontal">
+                        <img alt="..." src="assets/img/art-business-color-colorful-276267.jpg"/>
                         <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)"
                            data-target="asesoria_1">
                             <div class="content">
@@ -182,7 +203,7 @@
                         </a>
                     </div>
 
-                    <div class="project add-animation-stopped animation-3 pack">
+                    <div class="project add-animation-stopped animation-3 pack pack-horizontal">
                         <img alt="..." src="assets/img/adult-beads-blur-ceremony-239510.jpg"/>
                         <a class="over-area color-4 " href="javascript:void(0)" onClick="rubik.showModal(this)"
                            data-target="asesoria_3">
@@ -193,7 +214,7 @@
                         </a>
                     </div>
 
-                    <div class="project add-animation-stopped animation-2 pack">
+                    <div class="project add-animation-stopped animation-2 pack pack-horizontal">
                         <img alt="..." src="assets/img/chuttersnap-VU_38CQP7X8-unsplash.jpg"/>
                         <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)"
                            data-target="asesoria_5">
@@ -228,7 +249,8 @@
                 </div>
 
             </div>
-            <div style="text-align: center;"><a class="btn btn-lg cita-section" data-scroll="true" data-id="#contact2"> Agenda una
+            <div style="text-align: center;"><a class="btn btn-lg cita-section" data-scroll="true" data-id="#contact2">
+                Agenda una
                 cita</a></div>
         </div>
     </div>
@@ -268,17 +290,34 @@
                                 Escaparatismo,
                                 dedicándome a ser Vestuarista y Asesora de Imagen a partir de ese momento.</p>
 
-                            <p> Como vestuarista de publicidad tengo la oportunidad de formar parte de un universo
+                            <span id="more-about" style="display: none"><p> Como vestuarista de publicidad tengo la oportunidad de formar parte de un universo
                                 extremadamente dinámico y creativo, imaginando personajes que después vemos en pantalla,
                                 que
                                 representan los prototipos sociales o son totalmente fantásticos.</p>
 
-                            <p> La asesoría de imagen me permite ayudar a otra persona a encontrar su mejor versión,
-                                potenciando
-                                su personalidad a través de la imagen. A veces un cambio exterior es el detonante para
-                                un cambio
-                                interior. Amo ayudar a las personas transformando metas personales o profesionales en
-                                realidad.</p>
+                                <p> La asesoría de imagen me permite ayudar a otra persona a encontrar su mejor versión,
+                                    potenciando
+                                    su personalidad a través de la imagen. A veces un cambio exterior es el detonante
+                                    para
+                                    un cambio
+                                    interior. Amo ayudar a las personas transformando metas personales o profesionales
+                                    en
+                                    realidad.</p></span>
+                            <p style="text-decoration: underline; cursor: pointer"><a onclick="readMoreAbout()" id="btn-read-more-about">Leer más...</a></p>
+                            <script>
+                                function readMoreAbout() {
+                                    var moreText = document.getElementById("more-about");
+                                    var btnText = document.getElementById("btn-read-more-about");
+
+                                    if (moreText.style.display !== "none") {
+                                        btnText.innerHTML = "Leer más...";
+                                        moreText.style.display = "none";
+                                    } else {
+                                        btnText.innerHTML = "Leer menos";
+                                        moreText.style.display = "inline";
+                                    }
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
