@@ -88,6 +88,10 @@
     margin-bottom: 0.75em;
 }
 
+.title p{
+    margin-bottom: 1.5em;
+}
+
 /*      light colors         */
 /*           Font Smoothing      */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
@@ -2164,7 +2168,7 @@ a:hover {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
 }
 
 .section .nav > li {
@@ -4171,11 +4175,11 @@ body.noscroll {
     }
 
     .section-header .parallax, .section-header .full-image {
-        height: 80vh;
+        height: 100vh;
     }
 
     .section-header .parallax:after, .section-header .full-image:after {
-        height: 80vh;
+        height: 100vh;
     }
 
     .section-header .content {

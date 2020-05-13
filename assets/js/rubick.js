@@ -281,7 +281,6 @@ rubik = {
                 
                 div = '<div class="responsive-background" style="background-image:url(' + src + ')"/>';
                 $image.after(div);
-                $image.addClass('hidden-xs hidden-sm'); 
             });   
         }
     },  
