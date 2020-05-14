@@ -51,9 +51,9 @@
 }*/
 
 .cita-section {
-    box-shadow: 1px 1px 1px grey;
+    box-shadow: 3px 3px 3px grey;
     margin-top: 3em !important;
-    font-size: 1.4em !important;
+    font-size: 1em !important;
     color: #9D8364 !important;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
