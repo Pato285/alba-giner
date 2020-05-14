@@ -54,14 +54,18 @@
     box-shadow: 3px 3px 3px grey;
     margin-top: 3em !important;
     font-size: 1em !important;
-    color: #9D8364 !important;
+    color: #c46f3d !important;
+    font-weight: 1000;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .cita {
+    box-shadow: 3px 3px 3px #9D8364;
     margin-top: 3em !important;
     font-size: 1em !important;
     background-color: rgba(0, 68, 255, 0) !important;
+    color: #9D8364 !important;
+    border-color: #9D8364 !important;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
