@@ -96,12 +96,20 @@
             <div class="separator line-separator">✻</div>
         </div>
         <div class="video-container">
-            <video controls autoplay muted width="100%">
+            <video controls width="100%">
                 <source src="https://storage.googleapis.com/reel-alba/Reel%20Alba_2020.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
         </div>
+        <script>
+            var videos = document.getElementsByTagName("video")
+            for (var i = 0; i < videos.length; i++) {
+                var video = videos[i];
+                video.play();
+            }
 
+
+        </script>
     </div>
     <div style="margin-top: 3em" class="section section-clients-2" id="clients2">
         <div class="container">
@@ -186,7 +194,7 @@
                     costo.</p>
             </div>
             <div class="row" id="projectsLine1">
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-md-4 col-md-offset-2">
                     <div class="project add-animation-stopped animation-1 pack pack-horizontal">
                         <img alt="..." src="assets/img/art-business-color-colorful-276267.jpg"/>
                         <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)"
@@ -197,24 +205,12 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="project add-animation-stopped animation-3 pack pack-horizontal">
                         <img alt="..." src="assets/img/adult-beads-blur-ceremony-239510.jpg"/>
                         <a class="over-area color-4 " href="javascript:void(0)" onClick="rubik.showModal(this)"
                            data-target="asesoria_3">
                             <div class="content">
                                 <h4>ASESORÍA PARA OCASIÓN ESPECIAL</h4>
-                                <p>Click para más información</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project add-animation-stopped animation-2 pack pack-horizontal">
-                        <img alt="..." src="assets/img/chuttersnap-VU_38CQP7X8-unsplash.jpg"/>
-                        <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)"
-                           data-target="asesoria_5">
-                            <div class="content">
-                                <h4>ASESORÍA EXPRESS</h4>
                                 <p>Click para más información</p>
                             </div>
                         </a>
@@ -231,6 +227,11 @@
                             </div>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="row" id="projectsLine2">
+                <div class="col-md-4 col-md-offset-2">
+
                     <div class="project add-animation-stopped animation-1 pack">
                         <img alt="..." src="assets/img/javier-reyes-qi2cD5oR_fE-unsplash.jpg"/>
                         <a class="over-area color-4" href="javascript:void(0)" onClick="rubik.showModal(this)"
@@ -242,6 +243,29 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="project add-animation-stopped animation-2 pack pack-horizontal">
+                        <img alt="..." src="assets/img/marcus-loke-xXJ6utyoSw0-unsplash.jpg"/>
+                        <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)"
+                           data-target="asesoria_5">
+                            <div class="content">
+                                <h4>ASESORÍA EXPRESS</h4>
+                                <p>Click para más información</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project add-animation-stopped animation-2 pack pack-horizontal">
+                        <img alt="..." src="assets/img/brainstorm-meeting.jpg"/>
+                        <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)"
+                           data-target="asesoria_6">
+                            <div class="content">
+                                <h4>ASESORÍA PARA GRUPOS Y EMPRESAS</h4>
+                                <p>Click para más información</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
 
             </div>
             <div style="text-align: center;"><a class="btn btn-lg cita-section" data-scroll="true" data-id="#contact2">
@@ -599,7 +623,7 @@
                     <div class="col-md-10 col-md-offset-1">
                         <div class="article">
                             <div class="project-image">
-                                <img src="assets/img/chuttersnap-VU_38CQP7X8-unsplash.jpg"/>
+                                <img src="assets/img/marcus-loke-xXJ6utyoSw0-unsplash.jpg"/>
                             </div>
                             <div class="project-text">
                                 <p>Para impacientes como tú, resultados rápidos. Tips personalizados que con toda
@@ -607,6 +631,38 @@
                                     diferenciar todo aquello que te favorece más de lo que no funciona. Te lo
                                     demostramos ordenando tu closet y mediante un shopping exclusivo para ti en tiempo
                                     récord. </p>
+                                <a class="btn cita" data-scroll="true" data-id="#contact2"> Agenda una cita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="project-content" id="asesoria_6">
+    <div>
+        <div class="project-details">
+            <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+            <div class="container">
+                <div class="project-title">
+                    <h2>ASESORÍA PARA GRUPOS Y EMPRESAS</h2>
+                    <div class="separator-container">
+                        <div class="separator line-separator">✻</div>
+                    </div>
+                    <p>Hombre y Mujer</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="article">
+                            <div class="project-image">
+                                <img src="assets/img/brainstorm-meeting.jpg"/>
+                            </div>
+                            <div class="project-text">
+                                <p>Consulta por talleres de diferentes duraciones y dinámicas en grupo para aprender
+                                    juntos y practicar. Sean un grupo de amig@s o una consultoría para empresas, podemos
+                                    hacer de la imagen personal e institucional un momento de entretención y aprendizaje
+                                    tan ameno como práctico. </p>
                                 <a class="btn cita" data-scroll="true" data-id="#contact2"> Agenda una cita</a>
                             </div>
                         </div>
