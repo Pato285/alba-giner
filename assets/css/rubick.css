@@ -4401,3 +4401,22 @@ body.noscroll {
         display: none;
     }
 }
+@media (max-width: 900px) {
+    .wide-disp {
+        display: none;
+    }
+
+    .narrow-disp {
+        display: inline;
+    }
+}
+
+@media (min-width: 901px) {
+    .wide-disp {
+        display: block;
+    }
+
+    .narrow-disp {
+        display: none;
+    }
+}
