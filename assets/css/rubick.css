@@ -37,14 +37,47 @@
 }
 
 .pack {
-    margin-bottom: 30px;
-    margin-left: 10px;
+
 }
 
 .pack h4 {
-    font-size: 28px !important;
+    font-size: 22px !important;
 }
+.asesorias{
+    min-width: 600px;
+    width: 50%;
+    margin: auto;
+}
+.asesorias>div>div>div>img{
+    width: 100%;
+}
+.top-elems{
+    display: flex;
+ overflow: hidden;
+    margin-bottom: 4%;
+}
+.bot-elems{
 
+    display: flex;
+    overflow: hidden;
+}
+.ver-elems>*{
+}
+.hor-elems{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-elem{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.right-elem{
+    float: right;
+    width: 48%;
+}
 /*.pack-horizontal {
     width: 90% !important;
     height: 90%;
