@@ -39,6 +39,12 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
     <link href="assets/css/fonts/Rubik-Fonts.css" rel="stylesheet"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
     <!-- Global site tag (gtag.js) - Google Ads: 794839100 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-794839100"></script>
     <script>
@@ -110,39 +116,43 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-
-<div class="modal  fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="background-color: #9D8364">
-            <div class="modal-body text-center">
-                <div class="notice">
-                    <h5 style="font-size: xx-large; text-transform: uppercase;"><b>Promoción asesoría online</b></h5>
-                    <p>Consulta sobre las asesorías online disponibles.</p>
-                    <p>Ahora con <b>30% de descuento</b></p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" style="color: mintcream;border-color: mintcream;" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" style="color: black;border-color: black;" id="contact-modal">Contactar</button>
-            </div>
-        </div>
+<nav id="sidebar">
+    <div id="dismiss">
+        <i class="fas fa-times"></i>
     </div>
-</div>
-<script
-        src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
-        integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
-        crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#myModal').modal('show');
-    });
-    $("#contact-modal").click(function() {
-        $('#myModal').modal('hide');
-        $('html, body').animate({
-            scrollTop: $("#contact2").offset().top
-        }, 2000);
-    });
-</script>
+
+    <div class="sidebar-header">
+        <h3>PROMOCIÓN ASESORÍA ONLINE!</h3>
+    </div>
+    <form name="gform-promo" id="gform-promo" enctype="text/plain"
+          action="https://docs.google.com/forms/d/e/1FAIpQLScn4zsjmAqxpYpsW851Jvm4VLDXNxfagcqiRkzHYGI0IgtO8A/formResponse?"
+          target="hidden_iframe" onsubmit="submitted=true;">
+    <ul class="list-unstyled components">
+        <li>
+            <p>Consulta sobre las asesorías online disponibles.
+                Ahora con <b>30% de descuento</b></p>
+        </li>
+        <li>
+            <label>Nombre</label>
+            <input type="text" name="entry.1302930544" id="entry.1302930544" value=""
+                   placeholder="Tu Nombre"
+                   class="form-control">
+            <label>Email</label>
+            <input type="text" name="entry.858523689" id="entry.858523689" value=""
+                   placeholder="Tu Email"
+                   class="form-control">
+        </li>
+    </ul>
+    <ul class="list-unstyled CTAs">
+        <li>
+            <input type="submit" class="btn btn-lg btn-black "
+                   style="font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+        </li>
+    </ul>
+    </form>
+</nav>
+<div class="overlay"></div>
+
 
 <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" role="navigation">
     <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
@@ -243,6 +253,10 @@
             </div>
             <div class="text-area" style="padding-top: 1em">
                 <div class="title add-animation-stopped" style="max-width: 100%">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
                     <p>La Asesoría de imagen te ayuda y te da las herramientas para sacar el máximo partido a tu propia
                         imagen. No sólo mejora rotundamente la apariencia, sino lo más importante, te hace sentir mucho
                         más cómodo contigo mismo, potenciando y mejorando la percepción personal. Seas hombre o mujer,
@@ -595,15 +609,8 @@
                         </div>
                     </div>
                 </form>
-
                 <script type="text/javascript">var submitted = false;</script>
-                <script type="text/javascript">
-                    $('#gform').on('submit', function (e) {
-                        fbq('track', 'SubmitApplication');
-                        $('#gform *').fadeOut(2000);
-                        $('#gform').prepend('Hemos recibido su información...');
-                    });
-                </script>
+
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                         onload="if(submitted) {}"></iframe>
             </div>
@@ -889,5 +896,47 @@
 <!--   file where we handle all the script from the Rubik page   -->
 <script type="text/javascript" src="assets/js/rubick.js"></script>
 
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
 
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+</script>
+
+
+<script type="text/javascript">
+    $('#gform').on('submit', function (e) {
+        fbq('track', 'SubmitApplication');
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Hemos recibido su información...');
+    });
+</script>
+<script type="text/javascript">
+    $('#gform-promo').on('submit', function (e) {
+        fbq('track', 'SubmitApplication');
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+</script>
 </html>
