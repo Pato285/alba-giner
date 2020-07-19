@@ -120,36 +120,38 @@
     <div id="dismiss">
         <i class="fas fa-times"></i>
     </div>
-
-    <div class="sidebar-header">
-        <h3>¡AHORA ASESORÍA ONLINE!</h3>
+    <img src="assets/img/promo.png" style="position: absolute; top:0px; left:0px; transform: rotate(-20deg);" width="150px" alt="">
+    <div style=" height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="sidebar-header">
+            <h3>¡AHORA ASESORÍA ONLINE!</h3>
+        </div>
+        <form name="gform-promo" id="gform-promo" enctype="text/plain"
+              action="https://docs.google.com/forms/d/e/1FAIpQLScn4zsjmAqxpYpsW851Jvm4VLDXNxfagcqiRkzHYGI0IgtO8A/formResponse?"
+              target="hidden_iframe" onsubmit="submitted=true;">
+            <ul class="list-unstyled components">
+                <li>
+                    <p style="padding-left: 0;">Consulta sobre las asesorías online disponibles.
+                        Ahora con <b>30% de descuento.</b></p>
+                </li>
+                <li>
+                    <label>Nombre</label>
+                    <input type="text" name="entry.1302930544" id="entry.1302930544" value=""
+                           placeholder="Tu Nombre"
+                           class="form-control">
+                    <label>Email</label>
+                    <input type="text" name="entry.858523689" id="entry.858523689" value=""
+                           placeholder="Tu Email"
+                           class="form-control">
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <input type="submit" class="btn btn-lg btn-black "
+                           style="font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+                </li>
+            </ul>
+        </form>
     </div>
-    <form name="gform-promo" id="gform-promo" enctype="text/plain"
-          action="https://docs.google.com/forms/d/e/1FAIpQLScn4zsjmAqxpYpsW851Jvm4VLDXNxfagcqiRkzHYGI0IgtO8A/formResponse?"
-          target="hidden_iframe" onsubmit="submitted=true;">
-    <ul class="list-unstyled components">
-        <li>
-            <p>Consulta sobre las asesorías online disponibles.
-                Ahora con <b>30% de descuento.</b></p>
-        </li>
-        <li>
-            <label>Nombre</label>
-            <input type="text" name="entry.1302930544" id="entry.1302930544" value=""
-                   placeholder="Tu Nombre"
-                   class="form-control">
-            <label>Email</label>
-            <input type="text" name="entry.858523689" id="entry.858523689" value=""
-                   placeholder="Tu Email"
-                   class="form-control">
-        </li>
-    </ul>
-    <ul class="list-unstyled CTAs">
-        <li>
-            <input type="submit" class="btn btn-lg btn-black "
-                   style="font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif">
-        </li>
-    </ul>
-    </form>
 </nav>
 <div class="overlay"></div>
 

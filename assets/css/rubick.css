@@ -139,7 +139,7 @@
     left: -250px;
     height: 100vh;
     z-index: 1031;
-    background: #9D8364;
+    background: #a58370;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -155,7 +155,7 @@
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #9D8364;
+    background: #a58370;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -167,7 +167,7 @@
 
 #dismiss:hover {
     background: #fff;
-    color: #9D8364;
+    color: #a58370;
 }
 
 .overlay {
@@ -187,12 +187,12 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #9D8364;
+    background: #a58370;
 }
 
 #sidebar ul.components {
     padding: 20px;
-    border-bottom: 1px solid #9D8364;
+    border-bottom: 1px solid #a58370;
 }
 
 #sidebar ul p {
@@ -207,14 +207,14 @@
 }
 
 #sidebar ul li a:hover {
-    color: #9D8364;
+    color: #a58370;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #9D8364;
+    background: #a58370;
 }
 
 a[data-toggle="collapse"] {
@@ -232,7 +232,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #9D8364;
+    background: #a58370;
 }
 
 ul.CTAs {
@@ -249,12 +249,12 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #9D8364;
+    color: #a58370;
 }
 
 a.article,
 a.article:hover {
-    background: #9D8364 !important;
+    background: #a58370 !important;
     color: #fff !important;
 }
 
