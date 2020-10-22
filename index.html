@@ -58,6 +58,8 @@
 
         gtag('config', 'AW-794839100');
     </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     <!-- Begin Inspectlet Asynchronous Code -->
     <script type="text/javascript">
         (function () {
@@ -608,9 +610,10 @@
                             </div>
                             <div>
                                 <div class="col-md-2 col-md-offset-5">
-                                    <input type="submit" class="btn btn-lg btn-black "
-                                           style="font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif">
-                                    </input>
+                                    <button class="g-recaptcha btn btn-lg btn-black"
+                                            data-sitekey="6LcDYdoZAAAAACr3rBhcImNb0VqYn-5-Z-2JRWLO"
+                                            data-callback='onSubmit'
+                                            data-action='submit'>Enviar</button>
                                 </div>
                             </div>
                         </div>
@@ -931,7 +934,11 @@
     });
 </script>
 
-
+<script>
+    function onSubmit(token) {
+        document.getElementById("gform").submit();
+    }
+</script>
 <script type="text/javascript">
     $('#gform').on('submit', function (e) {
         fbq('track', 'SubmitApplication');
