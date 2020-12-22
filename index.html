@@ -153,8 +153,10 @@
             </ul>
             <ul class="list-unstyled CTAs">
                 <li>
-                    <input type="submit" class="btn btn-lg btn-black "
-                           style="font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+                    <button class="g-recaptcha btn btn-lg btn-black"
+                                            data-sitekey="6LcDYdoZAAAAACr3rBhcImNb0VqYn-5-Z-2JRWLO"
+                                            data-callback='onSubmit-promo'
+                                            data-action='submit'>Enviar</button>
                 </li>
             </ul>
         </form>
@@ -937,6 +939,11 @@
 <script>
     function onSubmit(token) {
         document.getElementById("gform").submit();
+    }
+</script>
+<script>
+    function onSubmit-promo(token) {
+        document.getElementById("gform-promo").submit();
     }
 </script>
 <script type="text/javascript">
